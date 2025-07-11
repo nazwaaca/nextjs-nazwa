@@ -1,33 +1,69 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
+import Image from 'next/image';
+import Card from './ui/components/cards';
 
-export default function Page() {
+export default function Hero() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        {/* <AcmeLogo /> */}
-      </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
+    <section
+      id="top"
+      className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-yellow-100 py-16 md:py-24"
+    >
+      <div className="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+        <div className="flex-1 space-y-6 max-w-xl">
+          <h6 className="text-pink-500 font-semibold">CrochetCute Shop</h6>
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Tempat Terbaik Untuk Produk Rajut
+          </h1>
+          <p className="text-lg text-gray-600">
+            Toko rajutan handmade dengan sentuhan cinta dan warna pastel. Temukan boneka amigurumi, pouch, tas, dan aksesoris lucu lainnya!
           </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+          <a
+            href="#contact"
+            className="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
+            Jelajahi Semua yang lucu disini
+          </a>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+        <div className="flex-1 flex justify-center md:justify-end">
+          <Image
+            src="/logo.png"
+            alt="Hero"
+            width={400}
+            height={400}
+            priority
+            className="rounded-xl object-contain"
+          />
+        </div>
+
+      </div>
+      {/* <section>
+      <div className="max-w-screen-xl mx-auto px-6 flex flex-col items-center gap-8 justify-center md:py-24">
+        <h1 className="text-3xl font-bold mb-8 text-pink-600 text-center">
+          Statistik Toko Crochet
+        </h1>
+        <div className="flex flex-wrap gap-8 justify-center">
+          <Card
+            icon={<span className="text-4xl">🧶</span>}
+            title="Total Produk"
+            value={120}
+            unit="pcs"
+          />
+          <Card
+            icon={<span className="text-4xl">🛍️</span>}
+            title="Pesanan Bulan Ini"
+            value={35}
+            unit="order"
+          />
+          <Card
+            icon={<span className="text-4xl">😊</span>}
+            title="Pelanggan Happy"
+            value={98}
+            unit="%"
+          />
         </div>
       </div>
-    </main>
+      </section> */}
+
+
+    </section>
   );
 }
