@@ -16,7 +16,7 @@ export default function Hero() {
             Toko rajutan handmade dengan sentuhan cinta dan warna pastel. Temukan boneka amigurumi, pouch, tas, dan aksesoris lucu lainnya!
           </p>
           <a
-            href="#contact"
+            href="/products"
             className="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
             Jelajahi Semua yang lucu disini
