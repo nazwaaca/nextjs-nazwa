@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Products', href: '/products/1' }, // contoh dynamic route
+  { name: 'Products', href: '/products' },
   { name: 'Contact', href: '/contact' },
 ];
 

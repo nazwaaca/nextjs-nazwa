@@ -6,11 +6,11 @@ export default function NotFound() {
     <main className="flex flex-col items-center justify-center min-h-screen bg-violet-100">
       <div className="text-[7rem] animate-bounce select-none">🦄</div>
       <h1 className="mt-2 text-4xl font-extrabold text-pink-600 drop-shadow-lg">
-        404 - Halaman Hilang!
+        Produk Tidak Ditemukan !
       </h1>
       <p className="mt-2 text-lg text-gray-700 text-center max-w-md">
         Waduh, kamu menemukan unicorn yang tersesat!<br />
-        Sepertinya halaman yang kamu cari tidak ada di dunia nyata.
+        Sepertinya produk yang kamu cari tidak ada di dunia nyata.
       </p>
       <div className="mt-6">
         <svg width="180" height="80" viewBox="0 0 180 80" fill="none">

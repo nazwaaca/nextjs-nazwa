@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export default function ProfileTokoCrochet() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-yellow-100">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-yellow-100 px-4 pb-6">
       <div className="bg-white/80 rounded-3xl shadow-xl p-8 max-w-3xl w-full flex flex-col items-center">
         <Image
-          src="/logo.png" // Ganti dengan nama file logo kamu
+          src="/logo.png" 
           alt="Logo Toko Crochet"
           width={120} 
           height={120}
